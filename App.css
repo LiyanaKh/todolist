@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.todo-list {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #72958d;
+}
+.todo-list h2 {
+  background-color: #bdcac2;
+  padding: 25px 300px;
+  color: white;
+  text-align: center;
+}
+.input-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+.input-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #766464;
+  border-radius: 4px 0 0 4px;
+  width: 75%;
+}
+.input-container button {
+  padding: 10px;
+  background: #405053;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  width: 20%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.input-container button:hover {
+  background-color: #bbb;
+}
+
+.todo-item {
+  padding: 5px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.todo-task.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+.todo-task {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.cross-icon {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 4px 0 0 4px;
+}
+.cross-icon:hover {
+  background-color: #bbb;
+}
+.todo-toggle-button:hover {
+  background-color: #bbb;
+}
